@@ -3,9 +3,12 @@
 <title>GitHub Basics</title>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 body {
-   background-image:B.jpg;
+   background-image:url(B.jpg);
+   width: 100%;
+   hight: 100%;
 }
 h1   {
    color:black;
@@ -22,6 +25,7 @@ h2   {
    color:black;
    text-align:left;
    font-size:150%;
+   
 }
 h3   {
    color:black;
@@ -38,25 +42,35 @@ h5   {
     text-align:left;
     font-size:150%;
 }
-h6   {
-    color:black;
-    text-align:left;
-    font-size:150%;
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
 }
-h7  {
-    color:black;
-     text-align:left;
-    font-size:150%;
+
+/* Clearfix (clear floats) */
+.row::after {
+  
+  float: right;
+  
 }
-h8  {
-    color:black;
-     text-align:left;
-    font-size:150%;
-}
-h9  {
-    font-size:150%;
-     text-align:left;
-}
+</style>
+<h1 style="font-family:Lucida Handwriting;"><marquee behavior="up">GitHub Command Line Basics</marquee></h1>
+<br><h2 style="padding: 5px;text-align: justify;font-family:Lucida Handwriting;">What is GitHub?</h2>
+<body>
+<div class="row">
+  <div class="column">
+   <p style="padding: 5px; width: 500px; height: 50px; text-align: justify;font-family:Calibri;">GitHub is the web interface for Git, a version control software (typically used by developers) that allows multiple users to make separate changes to a program at same time without getting in each others way.</p>
+  </div>
+ 
+  <div class="column">
+    <img src="example.PNG"; style="margin-left: 98%;
+  margin-right: 2%; padding: 5px;border-radius: 5px;float: right;width:100%;height:200"><br>
+  </div>
+</div>
+<br><h3 style="padding: 10px;text-align: justify;font-family:Lucida Handwriting;">Steps to Install and Launch GitHub for Windows?</h2>
+<br>
+<style>
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
@@ -64,7 +78,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 800px;
   position: relative;
   margin: auto;
 }
@@ -73,11 +87,11 @@ img {vertical-align: middle;}
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 35%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
-  color: white;
+  margin-top: 30px;
+  color: grey;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -109,10 +123,11 @@ img {vertical-align: middle;}
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: red;
+  margin-top: 20px;
   font-size: 12px;
   padding: 8px 12px;
-  position: absolute;
+  position: absolute;;
   top: 0;
 }
 
@@ -122,7 +137,7 @@ img {vertical-align: middle;}
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: dark grey;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -155,30 +170,113 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-
-
-
 </style>
 	
 </head>
-<h1 style="font-family:Lucida Handwriting;"><marquee behavior="up">GitHub Command Line Basics</marquee></h1>
 
 <body>
 
 <div class="slideshow-container">
-
 <div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="B.jpg" style="width:400;height:200">
+  <div class="numbertext">1 / 20</div>
+  <img src="1.PNG" style="width:800;height:400">
   <div class="text">Caption Two</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="fast.jpg" style="width:400;height:200">
+  <div class="numbertext">2 / 20</div>
+  <img src="2.PNG" style="width:800;height:400">
   <div class="text">Caption Three</div>
 </div>
-
+<div class="mySlides fade">
+  <div class="numbertext">3 / 20</div>
+  <img src="3.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 20</div>
+  <img src="A1.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 19</div>
+  <img src="A2.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 19</div>
+  <img src="6.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 20</div>
+  <img src="7.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 19</div>
+  <img src="8.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 20</div>
+  <img src="9.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 20</div>
+  <img src="10.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">11 / 20</div>
+  <img src="10b.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">12 / 20</div>
+  <img src="11.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">13 / 20</div>
+  <img src="12.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">14 / 20</div>
+  <img src="13.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">15 / 20</div>
+  <img src="14.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">16 / 20</div>
+  <img src="15.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">17 / 20</div>
+  <img src="16.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div> <div class="mySlides fade">
+  <div class="numbertext">18 / 20</div>
+  <img src="17.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">19 / 20</div>
+  <img src="18.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">20 / 20</div>
+  <img src="19.PNG" style="width:800;height:400">
+  <div class="text">Caption Three</div>
+</div>
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -186,11 +284,8 @@ img {vertical-align: middle;}
 <br>
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> <span class="dot" onclick="currentSlide(4)"></span> <span class="dot" onclick="currentSlide(5)"></span> <span class="dot" onclick="currentSlide(6)"></span> <span class="dot" onclick="currentSlide(7)"></span> <span class="dot" onclick="currentSlide(8)"></span> <span class="dot" onclick="currentSlide(9)"></span> <span class="dot" onclick="currentSlide(10)"></span> <span class="dot" onclick="currentSlide(11)"></span> <span class="dot" onclick="currentSlide(12)"></span> <span class="dot" onclick="currentSlide(13)"></span> <span class="dot" onclick="currentSlide(14)"></span> <span class="dot" onclick="currentSlide(15)"></span> <span class="dot" onclick="currentSlide(16)"></span> <span class="dot" onclick="currentSlide(17)"></span> <span class="dot" onclick="currentSlide(18)"></span> <span class="dot" onclick="currentSlide(19)"></span> <span class="dot" onclick="currentSlide(20)"></span> 
 </div>
-
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -219,14 +314,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-
 </body>
-<p style="text-align:left";><emp><b>In this era of inovation,where we rely on machines.We look forward for more inventions so' a degree in engineering especially in Information technology has a great scope and is very demanding.Top engineering and IT universities plays a vital role as many students graduates every year and works for prosperity of the country.</b></emp></p>
-<p>Some universities are listed below with their FEE STRUCTURE:-</p> 
-<h2><ins>*COMSATS University Of Information Technology:-</ins></h2>
-<p style="text-align:left">COMSATS is public university in pakistan and is multi-campus universty with its principal seat in Islamabad.It is one of the higher educational  IT institute in Pakistan.Its degree is also very demanding.</p>
-<p><b>FEE Structure:</b></p>
-<head>
 <style>
 table  {
       font-family:arial,sans serif;
