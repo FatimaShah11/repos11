@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-   background-image:url(image.jpg);
+   background-image:B.jpg;
 }
 h1   {
    color:black;
@@ -154,9 +154,14 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+
+
+
 </style>
+	
 </head>
-<h1 style="font-family:Goudy Stout;border:10 solid black;"><marquee behavior="up">GitHub Command Line Basics</marquee></h1>
+<h1 style="font-family:Lucida Handwriting;"><marquee behavior="up">GitHub Command Line Basics</marquee></h1>
 
 <body>
 
@@ -164,13 +169,13 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="image.jpg" style="width:100%">
+  <img src="B.jpg" style="width:400;height:200">
   <div class="text">Caption Two</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="fast.jpg" style="width:100%">
+  <img src="fast.jpg" style="width:400;height:200">
   <div class="text">Caption Three</div>
 </div>
 
