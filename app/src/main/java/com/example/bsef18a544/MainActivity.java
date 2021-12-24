@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mImageView=findViewById(R.id.imageView);
 
-
+        mResultTv=findViewById(R.id.resultTv);
+        mColorView=findViewById(R.id.colorView);
         mImageView.setDrawingCacheEnabled(true);
         mImageView.buildDrawingCache(true);
 
