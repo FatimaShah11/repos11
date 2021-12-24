@@ -31,7 +31,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
 
-
+                if (event.getAction() == MotionEvent.ACTION_DOWN || event.getAction() == MotionEvent.ACTION_MOVE) {
+                    bitmap = mImageView.getDrawingCache();
+                    int pixel = bitmap.getPixel((int) event.getX(), (int) event.getY());
+                    int r = Color.red(pixel);
+                    int g = Color.green(pixel);
+                    int b = Color.blue(pixel);
                 return true;
             }
         });
