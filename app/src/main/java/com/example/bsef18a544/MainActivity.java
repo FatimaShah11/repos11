@@ -1,6 +1,7 @@
 package com.example.bsef18a544;
 
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -30,13 +31,17 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-
                 if (event.getAction() == MotionEvent.ACTION_DOWN || event.getAction() == MotionEvent.ACTION_MOVE) {
                     bitmap = mImageView.getDrawingCache();
                     int pixel = bitmap.getPixel((int) event.getX(), (int) event.getY());
                     int r = Color.red(pixel);
                     int g = Color.green(pixel);
                     int b = Color.blue(pixel);
+
+
+
+
+
                     String hex = "#" + Integer.toHexString(pixel);
                     String name = "";
                     if(r == 237 && g == 31 && b == 36){ name = "Red";}
@@ -53,8 +58,12 @@ public class MainActivity extends AppCompatActivity {
                     if(r == 11 && g == 163 && b == 199){ name = "SkyBlue";}
 
 
+                    mColorView.setBackgroundColor(Color.rgb(r, g, b));
+                    mResultTv.setText("COLOR NAME: "+name+"\nRGB: " + r + "," + g + "," + b +"\nHEX: " + hex);
 
-                    return true;
+
+                }
+                return true;
             }
         });
     }
